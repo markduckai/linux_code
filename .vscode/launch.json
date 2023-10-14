@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/mark_duck/code",
-      "program": "/home/mark_duck/code/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "d:/code/semester5/linux_code/linux_code",
+      "program": "d:/code/semester5/linux_code/linux_code/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
