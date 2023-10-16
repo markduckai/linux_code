@@ -59,6 +59,7 @@
   "files.associations": {
     "types.h": "c",
     "unistd.h": "c",
-    "wait.h": "c"
+    "wait.h": "c",
+    "sched.h": "c"
   }
 }
