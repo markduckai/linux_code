@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+//compile: gcc example4_pthread.c -o example4_pthread.exe -pthread
+
 int sum;
 void *runner(void *param);
 
