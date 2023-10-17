@@ -60,6 +60,7 @@
     "types.h": "c",
     "unistd.h": "c",
     "wait.h": "c",
-    "sched.h": "c"
+    "sched.h": "c",
+    "pthread.h": "c"
   }
 }
