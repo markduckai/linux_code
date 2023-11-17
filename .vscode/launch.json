@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/mark_duck/code/exp3",
-      "program": "/home/mark_duck/code/exp3/build/Debug/outDebug",
+      "cwd": "/home/mark_duck/code/example",
+      "program": "/home/mark_duck/code/example/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
