@@ -8,9 +8,9 @@ int main(int argc, char **argv)
     MYSQL *mysql = mysql_init(NULL);
     const char *host_name = "127.0.0.1"; // set your mysql hostconst
     char *user_name = "root";            // set your user_nameconst
-    char *password = "12345678";         // set your passwordconst
-    char *db_name = "test";              // set your databasename
-    int port_num = 2883;                 // set your mysql port
+    char *password = "Stephen302018";         // set your passwordconst
+    char *db_name = "tpc";              // set your databasename
+    int port_num = 2881;                 // set your mysql port
     char *socket_name = NULL;
     MYSQL_RES *result;
     MYSQL_FIELD *fields;
@@ -31,9 +31,9 @@ int main(int argc, char **argv)
     }
     status = mysql_query(mysql, "CREATE TABLE customer_t1(c_customer_sk "
                                 "integer, c_customer_name varchar(32));");
-    status = mysql_query(mysql, "INSERT INTO customer_t1 VALUES(1,1),(20,'oceanbase');");
-    status = mysql_query(mysql, "UPDATE customer_t1 SET c_customer_name='new data' WHERE id=1;");
-    status = mysql_query(mysql, "SELECT * FROM customer_t1;"); /*did current statement return data? */
+    // status = mysql_query(mysql, "INSERT INTO customer_t1 VALUES(1,1),(20,'oceanbase');");
+    // status = mysql_query(mysql, "UPDATE customer_t1 SET c_customer_name='new data' WHERE id=1;");
+    status = mysql_query(mysql, "SELECT * FROM orders order by o_totalprice desc limit 10;"); /*did current statement return data? */
     result = mysql_store_result(mysql);
     if (result)
     {   /*yes; process rows and free the result set */
